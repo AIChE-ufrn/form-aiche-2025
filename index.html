@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIChE UFRN - 2025</title>
+    <link rel="icon" type="image/png" href="3.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo UFRN Fixa -->
+    <div class="ufrn-logo">
+        <img src="ufrn-logo-8.png" alt="UFRN">
+    </div>
+
+    <!-- Mascote Fixo -->
+    <div class="mascot">
+        <img src="marcote.png" alt="Mascote AIChE">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="3.png" alt="AIChE UFRN" class="hero-logo">
+            <h1>AVALIAÇÃO GERAL</h1>
+            <p>Capítulo AIChE UFRN — 2025</p>
+            <div class="hero-subtitle">Sua opinião é importante para nosso crescimento</div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <h2>QUAL DIRETORIA VOCÊ FEZ PARTE?</h2>
+            <p class="section-description">Selecione sua diretoria e função para acessar o formulário de avaliação</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Projetos</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" onclick="openForm('projetos', 'diretor'); return false;" class="btn btn-primary">Fui/Sou Diretor</a>
+                        <a href="#" onclick="openForm('projetos', 'membro'); return false;" class="btn btn-secondary">Fui/Sou Membro</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Marketing</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" onclick="openForm('marketing', 'diretor'); return false;" class="btn btn-primary">Fui/Sou Diretor</a>
+                        <a href="#" onclick="openForm('marketing', 'membro'); return false;" class="btn btn-secondary">Fui/Sou Membro</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Finanças</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" onclick="openForm('financas', 'diretor'); return false;" class="btn btn-primary">Fui/Sou Diretor</a>
+                        <a href="#" onclick="openForm('financas', 'membro'); return false;" class="btn btn-secondary">Fui/Sou Membro</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Presidência</h3>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" onclick="openForm('presidencia', 'diretor'); return false;" class="btn btn-primary">Fui/Sou Diretor</a>
+                        <!-- <a href="#" onclick="openForm('presidencia', 'membro'); return false;" class="btn btn-secondary">Fui/Sou Membro</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="tutor-section">
+                <h3>Avaliação do Professor Tutor</h3>
+                <a href="#" onclick="openForm('tutor', 'geral'); return false;" class="btn btn-tutor">Avaliar Professor Tutor</a>
+            </div>
+        </div> -->
+                    <!-- Foto Final -->
+            <div class="final-image">
+                <img src="IMG_9204.jpg" alt="AIChE UFRN">
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
