@@ -1,3 +1,6 @@
+    .btn-modal-convite {
+        margin-bottom: 150px;
+    }
 .modal-convite-overlay {
     position: fixed;
     top: 0;
@@ -66,7 +69,7 @@
         overflow-y: auto;
     }
     .modal-convite-box {
-        padding: 5vw 2vw 7vw 2vw;
+        padding: 5vw 2vw 22vw 2vw;
         font-size: 0.95rem;
         width: 90vw;
         max-width: 90vw;
@@ -85,10 +88,11 @@
     }
     .btn-modal-convite {
         width: 100%;
-        padding: 13px 0;
+        padding: 16px 0;
         font-size: 1rem;
         display: block;
-        margin: 10px auto 0 auto;
+        margin: 24px auto 0 auto;
+        margin-bottom: 150px;
     }
 }
 /* Modal de convite flutuante */
