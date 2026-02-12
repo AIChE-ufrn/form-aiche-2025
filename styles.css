@@ -66,18 +66,18 @@
         overflow-y: auto;
     }
     .modal-convite-box {
-        padding: 7vw 3vw 5vw 3vw;
-        font-size: 1rem;
-        width: 96vw;
-        max-width: 96vw;
+        padding: 5vw 2vw 7vw 2vw;
+        font-size: 0.95rem;
+        width: 90vw;
+        max-width: 90vw;
         min-width: 0;
         border-radius: 10px;
         box-shadow: 0 2px 16px rgba(209, 122, 63, 0.13), 0 1px 4px rgba(0,0,0,0.08);
-        max-height: 95vh;
+        max-height: 70vh;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     .modal-convite-text {
         font-size: 1rem;
