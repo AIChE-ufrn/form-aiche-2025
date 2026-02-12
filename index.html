@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Modal de convite -->
+    <div id="modal-convite" class="modal-convite-overlay">
+        <div class="modal-convite-box">
+            <p class="modal-convite-text">
+                Olá!<br>
+                Gostaríamos de convidar você a participar da avaliação do Capítulo Estudantil AIChE UFRN referente às atividades desenvolvidas ao longo do ano de 2025. A sua opinião é extremamente importante para nós, pois nos ajuda a compreender nossos pontos fortes e, principalmente, identificar oportunidades de melhoria.<br><br>
+                Pedimos que responda de forma sincera e, sempre que possível, com o maior nível de detalhes, abordando suas percepções sobre as diretorias, a gestão, as atividades realizadas e a atuação geral do capítulo. Suas contribuições serão fundamentais para o aprimoramento contínuo do AIChE UFRN e para o planejamento das próximas ações.<br><br>
+                Contamos com você. Muito obrigado por contribuir com o crescimento do nosso capítulo!
+            </p>
+            <button id="btn-modal-convite" class="btn-modal-convite">Entendi</button>
+        </div>
+    </div>
     <!-- Logo UFRN Fixa -->
     <div class="ufrn-logo">
         <img src="ufrn-logo-8.png" alt="UFRN">
@@ -26,7 +38,7 @@
     <section class="hero">
         <div class="hero-content">
             <img src="3.png" alt="AIChE UFRN" class="hero-logo">
-            <h1>AVALIAÇÃO GERAL</h1>
+            <h1>FORMULÁRIO DE AVALIAÇÃO - 2025</h1>
             <p>Capítulo AIChE UFRN — 2025</p>
             <div class="hero-subtitle">Sua opinião é importante para nosso crescimento</div>
         </div>
@@ -94,5 +106,15 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+    // Modal de convite
+    document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById('modal-convite');
+        var btn = document.getElementById('btn-modal-convite');
+        btn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    });
+    </script>
 </body>
 </html>
