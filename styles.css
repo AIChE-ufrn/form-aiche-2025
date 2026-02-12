@@ -1,3 +1,96 @@
+.modal-convite-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.55);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.modal-convite-box {
+    background: #fffbe6;
+    color: #2A2A2A;
+    border-radius: 22px;
+    box-shadow: 0 8px 40px rgba(209, 122, 63, 0.18), 0 2px 8px rgba(0,0,0,0.08);
+    padding: 38px 36px 28px 36px;
+    max-width: 520px;
+    width: 92vw;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: justify;
+    position: relative;
+    border-left: 10px solid #1B9E9E;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-convite-text {
+    margin-bottom: 28px;
+    font-size: 1.13rem;
+}
+
+.btn-modal-convite {
+    background: #1B9E9E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 38px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(27, 158, 158, 0.10);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 10px;
+    align-self: center;
+}
+.btn-modal-convite:hover {
+    background: #157575;
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .modal-convite-overlay {
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    .modal-convite-box {
+        padding: 7vw 3vw 5vw 3vw;
+        font-size: 1rem;
+        width: 96vw;
+        max-width: 96vw;
+        min-width: 0;
+        border-radius: 10px;
+        box-shadow: 0 2px 16px rgba(209, 122, 63, 0.13), 0 1px 4px rgba(0,0,0,0.08);
+        max-height: 95vh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .modal-convite-text {
+        font-size: 1rem;
+        margin-bottom: 18px;
+    }
+    .btn-modal-convite {
+        width: 100%;
+        padding: 13px 0;
+        font-size: 1rem;
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+}
 /* Modal de convite flutuante */
 .modal-convite-overlay {
     position: fixed;
@@ -64,7 +157,7 @@
 @media (max-width: 600px) {
     .modal-convite-overlay {
         align-items: center;
-        padding-top: 0;
+        justify-content: center;
         height: 100vh;
         min-height: 100vh;
         overflow-y: auto;
@@ -77,7 +170,7 @@
         min-width: 0;
         border-radius: 10px;
         box-shadow: 0 2px 16px rgba(209, 122, 63, 0.13), 0 1px 4px rgba(0,0,0,0.08);
-        max-height: 80vh;
+        max-height: 95vh;
         overflow-y: auto;
         display: block;
     }
